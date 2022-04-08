@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <h3 align="center">Virtual Reality Controller</h3>
+    <h3 align="center">Gesture Interface and Online Experience Controller</h3>
 </div>
 
 
@@ -81,7 +81,7 @@ git Link -[git](https://github.com/yijunqian)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Below are the reference sites I used to learn django and react
+Below are the reference tutorials used in developing this application
 
 * [MurtazasWorkshopRoboticsandAI](https://www.youtube.com/c/MurtazasWorkshopRoboticsandAI)
 
@@ -91,5 +91,5 @@ Below are the reference sites I used to learn django and react
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jinwoolee487/
-[homepage-screenshot]: 1a8cc008-30d4-4d53-9909-a86b036d476d.png
+[homepage-screenshot]: https://user-images.githubusercontent.com/46912607/162545138-9670f89d-b212-4e1f-a6b2-b0975c0cd395.png
 
