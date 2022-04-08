@@ -20,7 +20,25 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#inspiration">Inspiration</a></li>
+      </ul>
+      <ul>
+        <li><a href="#what-it-does">What it does</a></li>
+      </ul>
+      <ul>
+        <li><a href="#how-we-built-it">How we built it</a></li>
+      </ul>     
+      <ul>
+        <li><a href="#challenges-we-ran-into">Challenges we ran into</a></li>
+      </ul>
+      <ul>
+        <li><a href="#how-we-built-it">Accomplishments that we're proud of</a></li>
+      </ul>
+      <ul>
+        <li><a href="#how-we-built-it">What we learned</a></li>
+      </ul>
+      <ul>
+        <li><a href="#how-we-built-it">What's next for test</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
@@ -36,9 +54,24 @@
 
 As a challenge project for Philly CodeFest 2022, We decided to make a Virtual Reality Controller.  
 
+### Inspiration
+Inspiration
+### What it does
+What it does
+### How we built it
+What it does
+### Challenges we ran into
+What it does
+### Accomplishments that we're proud of
+What it does
+### What we learned
+What it does
+### What's next for test
+What it does
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Built With
+### How we built it
 
 Below are the major frameworks/libraries used to for my project.
 
