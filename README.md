@@ -5,7 +5,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![LinkedIn][linkedin-shield]][linkedin-url2]
 
-<img src="https://user-images.githubusercontent.com/46912607/162554633-ccb1b28f-1b1f-4875-bed6-5f0729dcbc03.png" width="300">
+<img src="https://user-images.githubusercontent.com/46912607/162554633-ccb1b28f-1b1f-4875-bed6-5f0729dcbc03.png" href="https://drexel.edu/cci/partnerships/community-engagement/philly-codefest/" width="300">
 
 <!-- PROJECT LOGO -->
 <br />
