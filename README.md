@@ -3,6 +3,7 @@
 <div id="top"></div>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/shirley-qiany/]
 
 
 <!-- PROJECT LOGO -->
