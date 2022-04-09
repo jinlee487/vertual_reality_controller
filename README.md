@@ -50,8 +50,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![homepage-screenshot](https://user-images.githubusercontent.com/46912607/162545138-9670f89d-b212-4e1f-a6b2-b0975c0cd395.png)](https://www.youtube.com/watch?v=5R6yFyDV3-I)
 
+[![homepage-screenshot](https://user-images.githubusercontent.com/46912607/162545138-9670f89d-b212-4e1f-a6b2-b0975c0cd395.png)](https://www.youtube.com/watch?v=5R6yFyDV3-I)
+- click image to play the video
 
 As a challenge project for Philly CodeFest 2022, We decided to make a Virtual Reality Controller.  
 
