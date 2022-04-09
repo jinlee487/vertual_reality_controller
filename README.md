@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <h3 align="center">Gesture Interface and Online Experience Controller</h3>
+    <h1 align="center">Gesture Interface and Online Experience Controller</h3>
 </div>
 
 
