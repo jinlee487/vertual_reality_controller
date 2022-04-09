@@ -3,7 +3,7 @@
 <div id="top"></div>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/shirley-qiany/]
+[![LinkedIn][linkedin-shield]][linkedin-url2]
 
 
 <!-- PROJECT LOGO -->
@@ -143,5 +143,7 @@ Below are the reference tutorials used in developing this application
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jinwoolee487/
+[linkedin-url2]: https://www.linkedin.com/in/shirley-qiany/
+
 [homepage-screenshot]: https://user-images.githubusercontent.com/46912607/162545138-9670f89d-b212-4e1f-a6b2-b0975c0cd395.png
 
