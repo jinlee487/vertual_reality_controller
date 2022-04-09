@@ -32,13 +32,13 @@
         <li><a href="#challenges-we-ran-into">Challenges we ran into</a></li>
       </ul>
       <ul>
-        <li><a href="#how-we-built-it">Accomplishments that we're proud of</a></li>
+        <li><a href="#accomplishments-that-were-proud-of">Accomplishments that we're proud of</a></li>
       </ul>
       <ul>
-        <li><a href="#how-we-built-it">What we learned</a></li>
+        <li><a href="#what-we-learned">What we learned</a></li>
       </ul>
       <ul>
-        <li><a href="#how-we-built-it">What's next for test</a></li>
+        <li><a href="#whats-next-for-test">What's next for test</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
