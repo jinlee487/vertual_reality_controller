@@ -151,6 +151,9 @@ Successfully implemented the following gesture feature!
 
 * the application will only run on windows
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -198,4 +201,6 @@ Below are the reference tutorials used in developing this application
 [linkedin-url2]: https://www.linkedin.com/in/shirley-qiany/
 
 [homepage-screenshot]: https://user-images.githubusercontent.com/46912607/162545138-9670f89d-b212-4e1f-a6b2-b0975c0cd395.png
+
+
 
