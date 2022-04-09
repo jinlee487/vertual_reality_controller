@@ -88,17 +88,28 @@ We designed a set of gesture interactions based on people’s experience from th
 
 
 3. Implementing the gestural language support in a web transactional experience
+
+
     [demo-video-youtube](https://youtu.be/5R6yFyDV3-I)
     
     
-    Below are the major frameworks/libraries used to for my project.
+    Below are the major frameworks/libraries for the project.
 
     * [Python](https://www.python.org/)
     * [mediapipe](https://google.github.io/mediapipe/)
     * [opencv](https://opencv.org/)
     
 ### Challenges we ran into
-What it does
+
+    - Difficulty in differentiating finger shapes and movements
+        * Some gestures look alike 
+        * overlapping pre-movements after-movements
+
+    - Difficulty in perceiving depth and distance from the camera
+        * Working with single camera 
+        * Absolute distance in snapshots of images 
+        * Length between fingers changed as distance from camera became further 
+
 
 ### Accomplishments that we're proud of
 What it does
