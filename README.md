@@ -71,14 +71,14 @@ We designed a set of gesture interactions based on people’s experience from th
 
     - Selecting 
     
-    <img src="https://user-images.githubusercontent.com/46912607/162552650-0f2ae37a-6564-4f03-8903-75822a22fe24.gif" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/46912607/162552650-0f2ae37a-6564-4f03-8903-75822a22fe24.gif" width="100" height="100">
     
     - clicking/opening
     - highlighting
     - Hovering
     - scrolling/zoom 
     
-    <img src="https://user-images.githubusercontent.com/46912607/162552659-f13b796b-54cd-450a-b391-7a721bc60597.gif" width="100" height="100"><img src="https://user-images.githubusercontent.com/46912607/162552655-9156e01c-55f9-408a-a44a-dc8aaef50754.gif" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/46912607/162552659-f13b796b-54cd-450a-b391-7a721bc60597.gif" width="100" height="100"><img src="https://user-images.githubusercontent.com/46912607/162552655-9156e01c-55f9-408a-a44a-dc8aaef50754.gif" width="100" height="100">
     
     - Call to main menu 
    
