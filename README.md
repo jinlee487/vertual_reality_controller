@@ -88,6 +88,7 @@ We designed a set of gesture interactions based on people’s experience from th
 
 
 3. Implementing the gestural language support in a web transactional experience
+    [demo-video-youtube](https://youtu.be/5R6yFyDV3-I)
 
 ### Challenges we ran into
 What it does
