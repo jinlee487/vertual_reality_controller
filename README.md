@@ -89,7 +89,14 @@ We designed a set of gesture interactions based on people’s experience from th
 
 3. Implementing the gestural language support in a web transactional experience
     [demo-video-youtube](https://youtu.be/5R6yFyDV3-I)
+    
+    
+    Below are the major frameworks/libraries used to for my project.
 
+    * [Python](https://www.python.org/)
+    * [mediapipe](https://google.github.io/mediapipe/)
+    * [opencv](https://opencv.org/)
+    
 ### Challenges we ran into
 What it does
 
@@ -102,15 +109,9 @@ What it does
 ### What's next for test
 What it does
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+![xr-expo-ipDhOQ5gtEk-unsplash](https://user-images.githubusercontent.com/46912607/162552958-b55efa75-0ee9-418c-be2e-81092f69e8d5.jpg)
+![tom-claes-CfdzNybONzc-unsplash](https://user-images.githubusercontent.com/46912607/162552961-e513d954-f432-4c28-8627-6f4b6f341c5a.jpg)
 
-### How we built it
-
-Below are the major frameworks/libraries used to for my project.
-
-* [Python](https://www.python.org/)
-* [mediapipe](https://google.github.io/mediapipe/)
-* [opencv](https://opencv.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
