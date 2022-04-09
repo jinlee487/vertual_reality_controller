@@ -65,19 +65,19 @@ We designed a set of gesture interactions based on people’s experience from th
 ### How we built it
 1. Identifying and defining the gestural language
 
-    - Selecting ![selecting](https://user-images.githubusercontent.com/46912607/162552650-0f2ae37a-6564-4f03-8903-75822a22fe24.gif)
+    - Selecting ![selecting](https://user-images.githubusercontent.com/46912607/162552650-0f2ae37a-6564-4f03-8903-75822a22fe24.gif | width=100)
 
     - clicking/opening
     - highlighting
     - Hovering
-![scrolling-down](https://user-images.githubusercontent.com/46912607/162552659-f13b796b-54cd-450a-b391-7a721bc60597.gif)
-![zoom-in](https://user-images.githubusercontent.com/46912607/162552655-9156e01c-55f9-408a-a44a-dc8aaef50754.gif)
+![scrolling-down](https://user-images.githubusercontent.com/46912607/162552659-f13b796b-54cd-450a-b391-7a721bc60597.gif | width=100)
+![zoom-in](https://user-images.githubusercontent.com/46912607/162552655-9156e01c-55f9-408a-a44a-dc8aaef50754.gif | width=100)
     - scrolling/zoom 
-![main manu](https://user-images.githubusercontent.com/46912607/162552653-2b1784df-2471-4374-8414-158fde2c15f0.gif)
+![main manu](https://user-images.githubusercontent.com/46912607/162552653-2b1784df-2471-4374-8414-158fde2c15f0.gif | width=100)
     - Call to main menu 
     - Typing
-![previous](https://user-images.githubusercontent.com/46912607/162552657-7f50c9dc-e112-495a-bfe9-9bf7e6d7f1fa.gif)
-![next](https://user-images.githubusercontent.com/46912607/162552658-40360cbb-b5f8-4a82-8dc1-1b2a76a04ef8.gif)
+![previous](https://user-images.githubusercontent.com/46912607/162552657-7f50c9dc-e112-495a-bfe9-9bf7e6d7f1fa.gif | width=100)
+![next](https://user-images.githubusercontent.com/46912607/162552658-40360cbb-b5f8-4a82-8dc1-1b2a76a04ef8.gif | width=100)
     - Back and forward pages 
 
 
