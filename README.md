@@ -54,12 +54,15 @@
 
 As a challenge project for Philly CodeFest 2022, We decided to make a Virtual Reality Controller.  
 
+
 ### Inspiration
-Inspiration
+Emerging complex new technologies and new functions increase memory loads of remembering the interactions or button locations on website. Gesture interface design based on real world experience can make the learning process easier.
 ### What it does
-What it does
+We designed a set of gesture interactions based on people’s experience from the real world. We expect the gesture interface we designed can reduce the memory loads and increase the user experience in people’s web browsing activities.
 ### How we built it
-What it does
+1. Identifying and defining the gestural language
+2. Implementing the gestural language support in a web transactional experience
+
 ### Challenges we ran into
 What it does
 ### Accomplishments that we're proud of
