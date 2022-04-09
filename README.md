@@ -131,10 +131,10 @@ Successfully implemented the following gesture feature!
 ### What's next for test
 
 1. We want to test the gesture control we designed can be applied into AR/VR web browsing activity, which provides the flexibility of browsing the web anytime anywhere without additional control devices.
-<img src="https://user-images.githubusercontent.com/46912607/162552961-e513d954-f432-4c28-8627-6f4b6f341c5a.jpg" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/46912607/162552958-b55efa75-0ee9-418c-be2e-81092f69e8d5.jpg" width="200" height="200">
 
 2. We want to have customized function which allows people with limited finger motor abilities(e.g. Stroke patients) to tailor their own gesture controls. 
-<img src="https://user-images.githubusercontent.com/46912607/162552958-b55efa75-0ee9-418c-be2e-81092f69e8d5.jpg" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/46912607/162552961-e513d954-f432-4c28-8627-6f4b6f341c5a.jpg" width="200" height="200">
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
