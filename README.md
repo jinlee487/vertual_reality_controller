@@ -42,6 +42,8 @@
         <li><a href="#whats-next-for-test">What's next for test</a></li>
       </ul>
     </li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -139,6 +141,15 @@ Successfully implemented the following gesture feature!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Installation
+
+1. Download the dist zip file from the releases. 
+2. unzip the folder
+3. run the main.py file in the subfolders
+
+* make sure you have the camera working and free for access
+
+* the application will only run on windows
 
 <!-- CONTRIBUTING -->
 ## Contributing
