@@ -115,7 +115,10 @@ We designed a set of gesture interactions based on people’s experience from th
 What it does
 
 ### What we learned
-What it does
+    - Requires more insight in gestural languages
+
+    - More cameras to allow more accurate computer vision
+
 
 ### What's next for test
 What it does
