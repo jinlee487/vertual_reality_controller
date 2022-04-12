@@ -123,17 +123,10 @@ class handDetector():
         return self.lmList, bbox
 
     def fingersUp(self, myHand):
-
-        """
-        Finds how many fingers are open and returns in a list.
-        Considers left and right hands separately
-        :return: List of which fingers are up
-        """
         myHandType = myHand["type"]
         myLmList = myHand["lmList"]
         if self.results.multi_hand_landmarks:
             fingers = []
-            # Thumb
             if myHandType == "Right":
                 if myLmList[self.tipIds[0]][0] > myLmList[self.tipIds[0] - 1][0]:
                     fingers.append(1)
@@ -144,28 +137,12 @@ class handDetector():
                     fingers.append(1)
                 else:
                     fingers.append(0)
-
-            # 4 Fingers
             for id in range(1, 5):
                 if myLmList[self.tipIds[id]][1] < myLmList[self.tipIds[id] - 2][1]:
                     fingers.append(1)
                 else:
                     fingers.append(0)
         return fingers
-
-        # fingers = []
-        # # Thumb
-        # if len(self.lmList) > 0 and self.lmList[self.tipIds[0]][1] > self.lmList[self.tipIds[0] - 1][1]:
-        #     fingers.append(1)
-        # else:
-        #     fingers.append(0)
-        # # 4 Fingers
-        # for id in range(1, 5):
-        #     if len(self.lmList) > 0 and self.lmList[self.tipIds[id]][2] < self.lmList[self.tipIds[id] - 2][2]:
-        #         fingers.append(1)
-        #     else:
-        #         fingers.append(0)
-        # return fingers
 
     def findDistance(self, p1, p2, img, draw=True):
 
@@ -189,11 +166,12 @@ class handDetector():
 wCam, hCam = 640, 480
 frameR = 100 # Frame Reduction
 smoothening = 7
-#########################
 isCommandOn = True
 pTime = 0
 plocX, plocY = 0, 0
 clocX, clocY = 0, 0
+#########################
+
  
 cap = VCModule().getVideoCapture()
 cap.set(3, wCam)
@@ -201,46 +179,35 @@ cap.set(4, hCam)
 detector = handDetector(max_num_hands=2)
 fdetector = faceDetector()
 wScr, hScr = pyautogui.size()
-# print(wScr, hScr)
 leftMouseDown = False
 rightMouseDown = False
 x1, y1, x2, y2 = 0, 0, 0, 0
 isFace = False
-# Find Function
-# x is the raw distance y is the value in cm
+
 x = [300, 245, 200, 170, 145, 130, 112, 103, 93, 87, 80, 75, 70, 67, 62, 59, 57]
 y = [20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
-coff = np.polyfit(x, y, 2)  # y = Ax^2 + Bx + C
+coff = np.polyfit(x, y, 2) 
 currentDistance = 0 
 showHand = False
 while True:
-    # 1. Find hand Landmarks
     success, img = cap.read()
     isFace = fdetector.detectFace(img)
     allHands, img = detector.findHands(img)
     lmList, bbox = detector.findPosition(img)
     if len(allHands) != 0:
         showHand = True
-    # 2. Get the tip of the index and middle fingers
     if len(allHands) == 2:
-        
         if detector.fingersUp(allHands[0]) == [1, 1, 0, 0, 0] and \
                 detector.fingersUp(allHands[1]) == [1, 1, 0, 0, 0]:
-            # print("Zoom Gesture")
             lmList1 = allHands[0]["lmList"]
             lmList2 = allHands[1]["lmList"]
-            # point 8 is the tip of the index finger
             if startDist is None:
-                #length, info, img = detector.findDistance(lmList1[8], lmList2[8], img)
                 length, info, img = detector.findDistance(allHands[0]["center"], allHands[1]["center"], img)
                 startDist = length
- 
-            #length, info, img = detector.findDistance(lmList1[8], lmList2[8], img)
+
             length, info, img = detector.findDistance(allHands[0]["center"], allHands[1]["center"], img)
- 
             scale = int((length - startDist) // 2)
             cx, cy = info[4:]
-            # print(length, startDist)
             if length < startDist and length < startDist*3//4:
                 if isCommandOn:
                     pyautogui.hotkey('ctrl', '-')
@@ -258,55 +225,27 @@ while True:
             x2, y2 = lmList[4][1:]
             x4, y4, z4 = lmList[5]
             x5, y5, y5 = lmList[17]
-            # print(x1, y1, x2, y2)
         x, y, w, h = bbox
         distance = int(math.sqrt((y2 - y1) ** 2 + (x2 - x1) ** 2))
         A, B, C = coff
         distanceCM = A * distance ** 2 + B * distance + C
         if currentDistance > 100:
             currentDistance = distanceCM
-        # cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 255), 3)
-        # cv2.putText(img, f'{int(distanceCM)} cm', (x+5, y-10), cv2.FONT_HERSHEY_PLAIN, 3,
-        # (255, 0, 0), 3)
-
-        # 3. Check which fingers are up
         fingers = detector.fingersUp(allHands[0])
-        # print(fingers)
         cv2.rectangle(img, (frameR, frameR), (wCam - frameR, hCam - frameR),
         (255, 0, 255), 2)
-
-        # no fingers: close
         if isFace == False and fingers[0] == 0 and fingers[1] == 0 and fingers[2] == 0 and fingers[3] == 0 and fingers[4] == 0:
             quit()
         if showHand == True and fingers[0] == 0 and fingers[1] == 0 and fingers[2] == 0 and fingers[3] == 0 and fingers[4] == 0:
             quit()
-        # if fingers[0] == 0 and fingers[1] == 0 and fingers[2] == 0 and fingers[3] == 0 and fingers[4] == 1:
-        #     quit()
-        # 4. Only Index Finger : Moving Mode
-        # mouse down, click, drag 
         if fingers[2] == 1 and fingers[3] == 1 and fingers[4] == 1:
-
             rightLength, rightLineInfo, rightImg = detector.findDistance(lmList[8][1:], lmList[12][1:], img)
             leftLength, LeftLineInfo, leftImg = detector.findDistance(lmList[8][1:], lmList[4][1:], img)
-
-            # cv2.putText(rightImg, f'length: {int(rightLength)}', (40, 50), cv2.FONT_HERSHEY_COMPLEX,
-            #     1, (255, 0, 0), 3)
-            # cv2.putText(leftImg, f'length: {int(leftLength)}', (40, 50), cv2.FONT_HERSHEY_COMPLEX,
-            #     1, (255, 0, 0), 3)
-            # 10. Click left button mouse if distance short
             if leftLength < 50:
-                # print(leftMouseDown,distanceCM,currentDistance, distanceCM - currentDistance)
-                # if leftMouseDown == True and 5 < distanceCM - currentDistance:
-                #     if isCommandOn:
-                #         pyautogui.click(button="primary")
-                #     leftMouseDown = False
                 cv2.circle(leftImg, (LeftLineInfo[4], LeftLineInfo[5]),
                 15, (0, 255, 0), cv2.FILLED)
-                # pyautogui.mouseDown(button="primary"); 
                 leftMouseDown = True
-                # currentDistance = distanceCM
             elif leftLength >= 50:  
-                # pyautogui.mouseUp(button="primary"); 
                 if leftMouseDown == True:
                     if isCommandOn:
                         pyautogui.click(button="primary")
@@ -319,32 +258,20 @@ while True:
                 if isCommandOn:
                     pyautogui.click(button="secondary")
 
-        # mouse movement
-        # 5. Convert Coordinates
         x3 = np.interp(x1, (frameR, wCam - frameR), (0, wScr))
         y3 = np.interp(y1, (frameR, hCam - frameR), (0, hScr))
-
-        # 6. Smoothen Values
         clocX = plocX + (x3 - plocX) / smoothening
         clocY = plocY + (y3 - plocY) / smoothening
         
-        # 7. Move Mouse
-        # if leftMouseDown == True:
-        #     if isCommandOn:    
-        #         pyautogui.dragTo(wScr - clocX, clocY, button='primary')
-        # else:
-        #     pyautogui.moveTo(wScr - clocX, clocY)
         pyautogui.moveTo(wScr - clocX, clocY)
 
     cv2.circle(img, (x1, y1), 15, (255, 0, 255), cv2.FILLED)
     plocX, plocY = clocX, clocY
 
-    # 11. Frame Rate
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
     cv2.putText(img, str(int(fps)), (20, 50), cv2.FONT_HERSHEY_PLAIN, 3,
     (255, 0, 0), 3)
-    # 12. DisplaystartDist*5//4
     cv2.imshow("Image", img)
     cv2.waitKey(1)
