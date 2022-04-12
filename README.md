@@ -10,7 +10,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <h1 align="center">Gesture Interface and Online Experience Controller</h3>
+    <h1 align="center">Gesture Interface and Online Experience Controller</h1>
+    <h3 align="center">Philly Codefest – Best Diversity, Equity & Inclusion (DEI) Hack Winner</h3>
 </div>
 
 
@@ -56,6 +57,10 @@
 
 [![homepage-screenshot](https://user-images.githubusercontent.com/46912607/162545138-9670f89d-b212-4e1f-a6b2-b0975c0cd395.png)](https://www.youtube.com/watch?v=5R6yFyDV3-I)
 - click image to play the video
+
+[![image](https://user-images.githubusercontent.com/46912607/162871655-2e038a31-f0e8-4bb1-97f2-912debc369e8.png)](https://devpost.com/software/test-3rej76)
+- click to view the hackathon
+
 
 As a challenge project for Philly CodeFest 2022, We decided to make a Virtual Reality Controller.  
 
